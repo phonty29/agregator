@@ -1,11 +1,13 @@
-import React from 'react';
-import Navbar from './components/Navbar.jsx';
-import {Link} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Search from './components/Search';
+import Grid from './components/Grid';
 
 const Main = () => {
   return (
     <main className="main">
         <Navbar/>
+        <Search/>
+        <Grid/>
     </main>
   );
 }

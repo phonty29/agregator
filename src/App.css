@@ -1,5 +1,13 @@
 .App {
   text-align: center;
-  width: 1440px;
 }
-
+.btn {
+  background: var(--primaryColor);
+  border-radius: 10px;
+  font-weight: 450;
+  line-height: 20px;
+  color: #fff !important;
+}
+.big {
+  border-radius: 15px;
+}
