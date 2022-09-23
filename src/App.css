@@ -1,13 +1,16 @@
 .App {
-  text-align: center;
+    text-align: center;
+    line-height: 20px;
 }
+
 .btn {
-  background: var(--primaryColor);
-  border-radius: 10px;
-  font-weight: 450;
-  line-height: 20px;
-  color: #fff !important;
+    background: var(--primaryColor);
+    border-radius: 10px;
+    font-weight: 450;
+    line-height: 20px;
+    color: #fff !important;
 }
+
 .big {
-  border-radius: 15px;
+    border-radius: 15px;
 }

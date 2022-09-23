@@ -11,9 +11,14 @@ const Grid = () => {
             <p className="subtitle">Предложения, которые любят наши клиенты</p>
         </div>
         <div className="grid-content">
-            {/* {cards.map(card => (
-                <Card key={`${card}`}/>
-            ))} */}
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
         </div>
     </div>
   );
