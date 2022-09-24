@@ -1,0 +1,107 @@
+.temp {
+    background: #010101;
+    padding: 100px 50px;
+    display: flex;
+}
+.auth {
+    position: relative;
+    padding: 59px 60px 54px 61px;
+    width: 526px;
+    text-align: center;
+    background: #F9FAFB;
+    box-shadow: -30px 30px 50px rgba(28, 28, 30, 0.1);
+    border-radius: 25px;
+    /* TEMP */
+    margin-right: 50px; 
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.fields > * {
+    margin: 0 0 8px 0;
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #C1C1CB;
+    font-family: Futura PT;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    color: #9494A0;
+    padding: 20px 20px 20px 20px;
+}
+.auth-title {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #424F5E;
+}
+.exit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-image: url('../assets/images/exit.png');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    padding: 13px;
+    width: 40px;
+    height: 40px;
+    background-color: #EBEBF0;
+    border-radius: 15px;
+}
+
+/* LOGIN */
+.login-title {
+    margin: 0 0 27px 0;
+}
+.alarm-message {
+    margin: 7px 0 13px 0;
+    color: #FF5139;
+    text-align: left;
+}
+.submite-btn {
+    margin: 0 0 27px 0;
+    font-size: 20px;
+    font-weight: 450;
+    color: #C1C1CB;
+    padding: 20px 0;
+}
+.register-link {
+    margin: 0 0 50px 0;
+    color: #C1C1CB;
+}
+.forgot-link {
+    font-size: 16px;
+    font-weight: 450;
+    text-decoration-line: underline;
+    color: #C1C1CB;
+
+}
+
+/* REGISTER */
+.register-title {
+    margin: 0 0 17px 0;
+}
+.register-fields {
+    margin: 0 0 117px 0;
+}
+.register-accept {
+    margin: 0 0 36px 0;
+    display: flex;
+}
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    background: #5A57FF;
+    border-radius: 5px;
+    margin: 0 9px 0 0;
+}
+.register-accept-condition {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    color: #424F5E;
+}
+.register-accept-condition:hover {
+    text-decoration: underline;
+}

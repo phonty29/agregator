@@ -1,11 +1,14 @@
 .App {
     text-align: center;
     line-height: 20px;
+    background: #fff;
+    letter-spacing: 0em;
 }
 .btn {
     font-family: 'Futura PT';
     background: var(--primaryColor);
     border-radius: 10px;
+    border: none;
     font-weight: 450;
     line-height: 20px;
     color: #fff !important;
