@@ -1,24 +1,57 @@
+.grid-body {
+    padding: 61px 100px 383px 100px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.grid-title {
+    color: #424F5E;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 28px 0;
+}
+.grid-title .title {
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 44px;
+    margin: 0 0 7px 0;
+}
+.grid-title .subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
 .grid-content {
     display: grid;
     grid-template-columns: repeat(4, 300px);
+    justify-content: center;
     gap: 15px;
-    width: 100%;
-    padding: 28px 100px 383px 100px;
 }
-
+.card {
+    background: #F9FAFB;
+    border-radius: 25px;
+    filter: drop-shadow(-30px 30px 60px rgba(28, 28, 30, 0.1));
+}
 .card-body {
     padding: 20px 0 30px 30px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    min-height: 246px;
+}
+
+.card-text {
+    flex: 1 1 auto;
 }
 
 .card-title {
     font-weight: 500;
     font-size: 20px;
     color: #424F5E;
+    margin: 0 0 16px 0;
 }
 
 .card-location {
-    margin-top: 16px;
+    margin: 0 0 12px 0;
     background: url('../assets/images/location.png') no-repeat left;
     padding: 0px 0px 0px 23px;
     font-weight: 400;
@@ -27,25 +60,24 @@
 }
 
 .card-desc {
-    margin: 12px 0 0 0;
+    margin: 0 0 12px 0;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 18px;
     color: #424F5E;
 }
 
 .card-price {
-    margin: 12px 0 0 0;
     font-weight: 500;
     font-size: 20px;
     color: #424F5E;
 }
 
 .card-btn {
+    width: 165px;
     border: none;
-    border-radius: 10px;
     font-weight: 450;
     font-size: 18px;
     text-align: center;
     color: #F9FAFB;
-    padding: 7px 40px 9px 40px;
+    padding: 7px 40px;
 }

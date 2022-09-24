@@ -2,15 +2,14 @@
     text-align: center;
     line-height: 20px;
 }
-
 .btn {
+    font-family: 'Futura PT';
     background: var(--primaryColor);
     border-radius: 10px;
     font-weight: 450;
     line-height: 20px;
     color: #fff !important;
 }
-
 .big {
     border-radius: 15px;
 }

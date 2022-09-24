@@ -9,10 +9,12 @@ const Card = () => {
             <img src={imageCard} />
         </div>
         <div className="card-body">
-            <h3 className="card-title">Infinity Plaza</h3>
-            <p className="card-location">Анталья, Турция</p>
-            <p className="card-desc">Один из крупнейших ресторанов..</p>
-            <p className="card-price">от $56 000 000</p>
+            <div className="card-text">
+              <h3 className="card-title">Infinity Plaza</h3>
+              <p className="card-location">Анталья, Турция</p>
+              <p className="card-desc">Один из крупнейших ресторанов..</p>
+              <p className="card-price">от $56 000 000</p>
+            </div>
             <button className="card-btn btn">Подробнее</button>
         </div>
     </div>      

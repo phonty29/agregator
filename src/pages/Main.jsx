@@ -4,7 +4,7 @@ import Grid from './components/Grid';
 
 const Main = () => {
   return (
-    <main className="main">
+    <main>
         <Navbar/>
         <Search/>
         <Grid/>
