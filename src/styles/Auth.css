@@ -1,18 +1,10 @@
-.temp {
-    background: #010101;
-    padding: 100px 50px;
-    display: flex;
-}
 .auth {
-    position: relative;
     padding: 59px 60px 54px 61px;
     width: 526px;
     text-align: center;
     background: #F9FAFB;
     box-shadow: -30px 30px 50px rgba(28, 28, 30, 0.1);
     border-radius: 25px;
-    /* TEMP */
-    margin-right: 50px; 
 }
 .form {
     display: flex;
@@ -48,6 +40,9 @@
     height: 40px;
     background-color: #EBEBF0;
     border-radius: 15px;
+}
+.exit:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* LOGIN */

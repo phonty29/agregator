@@ -14,6 +14,7 @@ const Card = () => {
               <p className="card-location">Анталья, Турция</p>
               <p className="card-desc">Один из крупнейших ресторанов..</p>
               <p className="card-price">от $56 000 000</p>
+              <p className="card-schedule">График работы: 9:00 - 22:00</p>
             </div>
             <button className="card-btn btn">Подробнее</button>
         </div>
