@@ -1,7 +1,8 @@
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 const initialState = {
-    restaurants: []
+    restaurants: [],
+    searchingRestaurants: []
 };
 
 export const restaurantsSlice = createSlice({
@@ -10,9 +11,15 @@ export const restaurantsSlice = createSlice({
   reducers: {
     setRestaurants: (state, action) =>  {
         state.restaurants = action.payload;
+    },
+    searchRestaurants: (state, action) => {
+      state.searchingRestaurants = state.restaurants.filter( restaurant => {
+        if (restaurant.title.toLowerCase().startsWith(action.payload.toLowerCase()))
+          return restaurant;
+      });
     }
   }
 });
-export const { setRestaurants } = restaurantsSlice.actions;
+export const { setRestaurants, searchRestaurants } = restaurantsSlice.actions;
 
 export default restaurantsSlice.reducer;

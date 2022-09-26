@@ -65,14 +65,6 @@
     font-size: 18px;
     color: #424F5E;
 }
-
-/* .card-price {
-    font-weight: 500;
-    font-size: 20px;
-    color: #424F5E;
-    margin: 0 0 10px 0;
-} */
-
 .card-schedule {
     font-weight: 300;
     font-size: 16px;
@@ -87,4 +79,36 @@
     text-align: center;
     color: #F9FAFB;
     padding: 7px 40px;
+}
+
+@media (max-width: 1440px){
+    .grid-body {
+        padding: 51px 75px 283px 75px;
+    }
+
+    .grid-content {
+        grid-template-columns: repeat(3, 300px);
+        gap: 20px;
+    }    
+}
+
+@media (max-width: 1135px){
+    .grid-body {
+        padding: 41px 50px 183px 50px;
+    }
+
+    .grid-content {
+        grid-template-columns: repeat(2, 300px);
+        gap: 30px;
+    }    
+}
+
+@media (max-width: 890px){
+    .grid-body {
+        padding: 31px 25px 83px 25px;
+    }
+
+    .grid-content {
+        grid-template-columns: repeat(1, 300px);
+    }    
 }

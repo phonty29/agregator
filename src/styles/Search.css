@@ -2,9 +2,7 @@
     background-color: var(--primaryColor);
     padding: 122px 106px 82px 94px;
 }
-.search-content {
 
-}
 .search-text p {
     max-width: 775px;
     margin-bottom: 30px;
@@ -49,4 +47,14 @@
     letter-spacing: 0em;
     text-align: center;
 
+}
+
+@media (max-width: 890px){
+    .search-form {
+        flex-direction: column;
+    }    
+
+    .search-form-input {
+        margin: 0 0 25px 0;
+    }
 }

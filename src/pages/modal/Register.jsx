@@ -4,6 +4,7 @@ import '../../styles/Auth.css';
 import Exit from '../components/Exit';
 import validator from 'validator';
 import { register } from '../../api';
+import { v4 } from 'uuid';
 
 const Register = () => {
   const emailRef = useRef(null);
@@ -14,7 +15,7 @@ const Register = () => {
   const createNewUser = async (e) => {
     e.preventDefault();
     if (validator.isEmail(emailRef.current.value) && passwordRef.current.value.length >= 8 && samePasswordRef.current.value == passwordRef.current.value && acceptCondo) {
-        const tokens = await register({email: emailRef.current.value, nickname: "test", phone: "77777777777", password: passwordRef.current.value});
+        const tokens = await register({email: emailRef.current.value, nickname: v4(), phone: "77777777777", password: passwordRef.current.value});
         console.log(tokens);
         if (!tokens)
             alert("Неверные данные пользователя");

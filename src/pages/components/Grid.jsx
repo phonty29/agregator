@@ -3,11 +3,11 @@ import {useDispatch, useSelector} from 'react-redux';
 import Card from './Card';
 import '../../styles/Grid.css';
 import { getRestaurants } from '../../api';
-import { setRestaurants } from '../../rtk/restaurantsSlice';
+import { setRestaurants, searchRestaurants } from '../../rtk/restaurantsSlice';
 
 const Grid = () => {
   const dispatch = useDispatch();
-  const {restaurants} = useSelector(state => state.restaurants);
+  const {searchingRestaurants} = useSelector(state => state.restaurants);
   useEffect(() => {
     fetchData();
   }, []);
@@ -16,6 +16,8 @@ const Grid = () => {
     if (localStorage.getItem("accessToken")) {
       const {count, restaurants} = await getRestaurants(localStorage.getItem("accessToken"));
       dispatch(setRestaurants(restaurants));
+      dispatch(setRestaurants(restaurants));
+      dispatch(searchRestaurants(''));
     }
   };
 
@@ -27,7 +29,7 @@ const Grid = () => {
               <p className="subtitle">Предложения, которые любят наши клиенты</p>
           </div>
           <div className="grid-content">
-              {restaurants.map(restaurant => <Card key={restaurant.id} fields={restaurant}/>)}
+              {searchingRestaurants.map(restaurant => <Card key={restaurant.id} fields={restaurant}/>)}
           </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
     position: absolute;
     left: 0px;
     top: -1px;
-    width: 100%;
+    width: 100vw;
     border-radius: 0px 0px 20px 20px;
     box-shadow: -20px 20px 50px rgba(28, 28, 30, 0.05);
     background: #FFFFFF;
