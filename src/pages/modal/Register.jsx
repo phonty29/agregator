@@ -14,10 +14,15 @@ const Register = () => {
   const createNewUser = async (e) => {
     e.preventDefault();
     if (validator.isEmail(emailRef.current.value) && passwordRef.current.value.length >= 8 && samePasswordRef.current.value == passwordRef.current.value && acceptCondo) {
-        const user = await register({email: emailRef.current.value, password: passwordRef.current.value});
-        console.log(user);
-        if (!user)
+        const tokens = await register({email: emailRef.current.value, nickname: "test", phone: "77777777777", password: passwordRef.current.value});
+        console.log(tokens);
+        if (!tokens)
             alert("Неверные данные пользователя");
+        else {
+            localStorage.setItem("accessToken", tokens.accessToken);
+            localStorage.setItem("refreshToken", tokens.refreshToken);
+            window.location.reload();
+        }            
     }
     else
         alert("Неверные данные пользователя");

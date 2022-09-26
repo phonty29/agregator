@@ -1,8 +1,7 @@
 import '../../styles/Grid.css';
 import imageCard from '../../assets/images/Rectangle 1018.png';
 
-const Card = () => {
-
+const Card = ({fields}) => {
   return (
     <div className="card">
         <div className="card-image">
@@ -10,11 +9,10 @@ const Card = () => {
         </div>
         <div className="card-body">
             <div className="card-text">
-              <h3 className="card-title">Infinity Plaza</h3>
-              <p className="card-location">Анталья, Турция</p>
-              <p className="card-desc">Один из крупнейших ресторанов..</p>
-              <p className="card-price">от $56 000 000</p>
-              <p className="card-schedule">График работы: 9:00 - 22:00</p>
+              <h3 className="card-title">{fields.title}</h3>
+              <p className="card-location">{fields.coords.address_name}</p>
+              <p className="card-desc">{fields.description.substring(0, 30)}...</p>
+              <p className="card-schedule">График работы: {fields.schedule.opening} - {fields.schedule.closing}</p>
             </div>
             <button className="card-btn btn">Подробнее</button>
         </div>

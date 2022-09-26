@@ -36,7 +36,7 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    min-height: 275px;
+    min-height: 246px;
 }
 
 .card-text {
@@ -66,16 +66,16 @@
     color: #424F5E;
 }
 
-.card-price {
+/* .card-price {
     font-weight: 500;
     font-size: 20px;
     color: #424F5E;
     margin: 0 0 10px 0;
-}
+} */
 
 .card-schedule {
     font-weight: 300;
-    font-size: 15px;
+    font-size: 16px;
     color: #424F5E;
 }
 
